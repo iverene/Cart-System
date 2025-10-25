@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    --color-soft-gray: #F2F2F2;
+    --color-charcoal-gray: #27251F;
+    --color-warm-white: #FFF5E1;
+    --color-golden-yellow: #FFC72C;
+    --color-mcdo-red: #DA291C;
+    
+    --font-family-poppins: 'Poppins', sans-serif;
+}
+
+@layer components {
+    .item-card {
+  @apply bg-white rounded-xl p-4 shadow-sm border border-gray-200 
+         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] 
+         transition-all duration-200 ease-in-out cursor-pointer text-center;
+}
+
+.item-card img {
+  @apply w-full h-50 object-cover rounded-lg mb-3;
+}
+
+.item-card h3 {
+  @apply font-semibold text-charcoal-gray text-base truncate;
+}
+
+.item-card p {
+  @apply text-mcdo-red font-bold text-lg mt-1;
+}
+
+.price {
+    @apply flex;
+}
+
+.add-btn {
+    @apply bg-mcdo-red w-10 h-8 rounded-sm;
+}
+
+}
+
