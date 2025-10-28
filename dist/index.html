@@ -21,21 +21,22 @@
 
   <!-- Categories -->
   <div class="flex overflow-x-auto mt-2 mb-6 gap-5 p-3 scrollbar-hide md:justify-center xl:justify-center">
-    <button class="category-btn">Burgers</button>
-    <button class="category-btn">Breakfast</button>
-    <button class="category-btn">Chicken & Platters</button>
-    <button class="category-btn">Fries</button>
-    <button class="category-btn">Drinks & Desserts</button>
-    <button class="category-btn">McCafé</button>
-    <button class="category-btn">Extras</button>
+    <button class="category-btn active" data-category="burgers">Burgers</button>
+    <button class="category-btn" data-category="breakfast">Breakfast</button>
+    <button class="category-btn" data-category="pancake">Pancake & Platters</button>
+    <button class="category-btn" data-category="fries">Fries</button>
+    <button class="category-btn" data-category="drinks">Drinks & Desserts</button>
+    <button class="category-btn" data-category="mccafe">McCafé</button>
+    <button class="category-btn" data-category="extras">Extras</button>
   </div>
 
   <div class="flex flex-col lg:flex-row container mx-auto p-4 gap-6">
     <!-- Product List -->
-    <div class="w-full lg:w-2/3  lg:max-h-[calc(100vh-200px)] lg:overflow-y-auto scrollbar-hide">
+    <div class="w-full lg:w-2/3 lg:max-h-[calc(100vh-200px)] lg:overflow-y-auto scrollbar-hide p-3">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4"> 
 
-        <div class="item-card">
+        <!-- Burgers -->
+        <div class="item-card" data-category="burgers">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-13-300x300.webp">
           <h3>Triple Cheeseburger Meal</h3>
           <div class="price-container">
@@ -46,7 +47,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="burgers">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-15-300x300.webp">
           <h3>Cheeseburger Meal</h3>
           <div class="price-container">
@@ -57,7 +58,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="burgers">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-16-300x300.webp">
           <h3>Big Mac Meal</h3>
           <div class="price-container">
@@ -68,7 +69,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="burgers">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-11-300x300.webp">
           <h3>Quarter Pounder w/ Cheese Meal</h3>
           <div class="price-container">
@@ -79,7 +80,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="burgers">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-06-300x300.webp">
           <h3>McChicken Meal</h3>
           <div class="price-container">
@@ -90,7 +91,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="burgers">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-19-300x300.webp">
           <h3>Cheesy Burger McDo Meal</h3>
           <div class="price-container">
@@ -101,7 +102,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="burgers">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-price-02-300x300.webp">
           <h3>Double Big Mac Meal</h3>
           <div class="price-container">
@@ -112,7 +113,8 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <!-- Breakfast Meals -->
+        <div class="item-card" data-category="breakfast">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/sausage-mcmuffin-with-hashbrowns-meal-300x300-1.webp">
           <h3>Sausage McMuffin with Hash Browns Meal</h3>
           <div class="price-container">
@@ -123,7 +125,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="breakfast">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/egg-muffin-meal-300x300-1.webp">
           <h3>Egg Muffin Meal</h3>
           <div class="price-container">
@@ -134,7 +136,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="breakfast">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-with-hashbrown-meal-300x300-1.webp">
           <h3>Cheesy Eggdesal with Hash Browns Meal</h3>
           <div class="price-container">
@@ -145,7 +147,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="breakfast">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-meal-with-sausage-meal-300x300-1.webp">
           <h3>Cheesy Eggdesal with Sausage Meal</h3>
           <div class="price-container">
@@ -156,7 +158,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="breakfast">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-meal-with-ham-meal-300x300-1.webp">
           <h3>Cheesy Eggdesal with Ham Meal</h3>
           <div class="price-container">
@@ -167,7 +169,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="breakfast">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-solo-300x300-1.webp">
           <h3>Cheesy Eggdesal Solo</h3>
           <div class="price-container">
@@ -179,7 +181,7 @@
         </div>
 
         <!-- Pancake & Platters -->
-        <div class="item-card">
+        <div class="item-card" data-category="pancake">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/2-pc-hotcakes-solo-300x300-1.webp">
           <h3>2 pcs Hotcakes Solo – Classic</h3>
           <div class="price-container">
@@ -190,7 +192,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="pancake">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/2-pc-hotcakes-with-hasbrown-meal-300x300-1.webp">
           <h3>2 pc Hotcakes with Hash Brown Meal</h3>
           <div class="price-container">
@@ -201,7 +203,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="pancake">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/2-pc-hotcakes-with-hashbrown-meal-300x300-1.webp">
           <h3>2 pc Hotcakes & Sausage with Hash Browns Meal</h3>
           <div class="price-container">
@@ -213,7 +215,7 @@
         </div>
 
         <!-- Fries -->
-        <div class="item-card">
+        <div class="item-card" data-category="fries">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcfries-original.webp">
           <h3>Fries</h3>
           <div class="price-container">
@@ -224,7 +226,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="fries">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-13-300x300.webp">
           <h3>BFF Fries</h3>
           <div class="price-container">
@@ -235,7 +237,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="fries">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-15-300x300.webp">
           <h3>Shake Shake Fries BBQ</h3>
           <div class="price-container">
@@ -246,7 +248,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="fries">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-14-300x300.webp">
           <h3>Shake Shake Fries Cheese</h3>
           <div class="price-container">
@@ -257,7 +259,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="fries">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/twister-fries-regular-300x300.webp">
           <h3>Twister Fries Regular</h3>
           <div class="price-container">
@@ -269,7 +271,7 @@
         </div>
 
         <!-- Drinks & Desserts -->
-         <div class="item-card">
+         <div class="item-card" data-category="drinks">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-14-philippines-coke-300x300.webp">
           <h3>Coke</h3>
           <div class="price-container">
@@ -280,7 +282,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="drinks">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-04-philippines-300x300.webp">
           <h3>Coke McFloat</h3>
           <div class="price-container">
@@ -291,7 +293,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="drinks">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-02-philippines-300x300.webp">
           <h3>Hot Fudge Sundae</h3>
           <div class="price-container">
@@ -302,7 +304,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="drinks">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-03-philippines-300x300.webp">
           <h3>Hot Caramel Sundae</h3>
           <div class="price-container">
@@ -313,7 +315,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="drinks">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-11-philippines-300x300.webp">
           <h3>McFlurry with Oreo</h3>
           <div class="price-container">
@@ -324,7 +326,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="drinks">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-10-philippines-300x300.webp">
           <h3>Matcha McFlurry with Oreo Solo</h3>
           <div class="price-container">
@@ -335,7 +337,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="drinks">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/apple-pie-mcdo-philippines.webp">
           <h3>Apple Pie</h3>
           <div class="price-container">
@@ -347,7 +349,7 @@
         </div>
 
         <!-- McCafe -->
-        <div class="item-card">
+        <div class="item-card" data-category="mccafe">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/10/image-2.png">
           <h3>McCafé Premium Roast Coffee</h3>
           <div class="price-container">
@@ -358,7 +360,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="mccafe">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/10/image-3.png">
           <h3>McCafé Iced Coffee Original</h3>
           <div class="price-container">
@@ -370,7 +372,7 @@
         </div>
 
         <!-- Extras -->
-        <div class="item-card">
+        <div class="item-card" data-category="extras">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-08-300x300.webp">
           <h3>Extra Plain Rice</h3>
           <div class="price-container">
@@ -381,7 +383,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="extras">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-01-300x300.webp">
           <h3>Extra Gravy</h3>
           <div class="price-container">
@@ -392,7 +394,7 @@
           </div> 
         </div>
 
-        <div class="item-card">
+        <div class="item-card" data-category="extras">
           <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-18-300x300.webp">
           <h3>Extra Crispy Chicken Fillet Ala King Sauce</h3>
           <div class="price-container">
@@ -405,9 +407,6 @@
 
       </div>
     </div>
-
-    
-    
 
     <!-- Orders Panel -->
     <div class="w-full lg:w-1/3 h-full bg-white shadow-lg rounded-lg 

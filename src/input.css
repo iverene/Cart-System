@@ -16,19 +16,19 @@
 .category-btn {
   @apply border-2 border-golden-yellow rounded-full px-5 py-2 font-semibold text-sm 
   hover:bg-mcdo-red hover:text-white hover:border-none
-  whitespace-nowrap flex-shrink-0;
+  whitespace-nowrap flex-shrink-0 transition-all duration-200;
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+.category-btn.active {
+  @apply bg-mcdo-red text-white border-none;
 }
+
 .scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  @apply [&::-webkit-scrollbar]:hidden [&]:[scrollbar-width:none] [&]:[-ms-overflow-style:none];
 }
 
 .item-card {
-  @apply flex flex-col min-h-[320px] bg-white rounded-xl p-4 shadow-sm border border-golden-yellow 
+  @apply flex flex-col min-h-[300px] bg-white rounded-xl p-4 shadow-sm border border-golden-yellow 
          hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] 
          transition-all duration-200 ease-in-out;
 }
@@ -38,7 +38,7 @@
 }
 
 .item-card h3 {
-  @apply font-semibold text-charcoal-gray text-lg text-left mb-auto;
+  @apply font-semibold text-charcoal-gray text-base text-left mb-auto;
 }
 
 .item-card p {
@@ -57,4 +57,3 @@
   @apply flex justify-between items-center py-4 border-b border-gray-200;
 }
 }
-
