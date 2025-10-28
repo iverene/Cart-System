@@ -34,7 +34,7 @@
 }
 
 .item-card img {
-  @apply w-full h-28 object-contain rounded-md mb-2;
+  @apply w-full h-28 object-contain rounded-lg mb-2;
 }
 
 .item-card h3 {
@@ -50,7 +50,7 @@
 }
 
 .add-btn {
-    @apply bg-mcdo-red w-10 h-8 rounded-sm cursor-pointer ;
+    @apply bg-mcdo-red w-10 h-8 p-1 rounded-sm cursor-pointer hover:bg-red-700;
 }
 
 .order-item-card {
