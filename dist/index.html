@@ -3,32 +3,436 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McDonald</title>
+  <link rel="icon" type="image/png" href="https://th.bing.com/th/id/R.8ebe3e57e3e3f05204d02982b6770931?rik=b2WYsgwEwJKCEg&riu=http%3a%2f%2fpngimg.com%2fuploads%2fmcdonalds%2fmcdonalds_PNG17.png&ehk=a6cfXksYj0D%2f0lQjY7HzJSAaoFORKRNd5UGjH5OK6Bg%3d&risl=&pid=ImgRaw&r=0">
   <link href="./style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="bg-white p-5 text-charcoal-gray">
-<div class="flex gap-45 items-center">
-  <button>
-    <i class="fa-solid fa-bars text-2xl md:hidden"></i>
-  </button>
-  <img src="https://th.bing.com/th/id/R.8ebe3e57e3e3f05204d02982b6770931?rik=b2WYsgwEwJKCEg&riu=http%3a%2f%2fpngimg.com%2fuploads%2fmcdonalds%2fmcdonalds_PNG17.png&ehk=a6cfXksYj0D%2f0lQjY7HzJSAaoFORKRNd5UGjH5OK6Bg%3d&risl=&pid=ImgRaw&r=0" class="h-15">
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-3">
-    
-<div class="item-card">
-  <img src="https://d3bjzufjcawald.cloudfront.net/public/web/2024-03-06/65e82c80d0140/Menu_Burgers_500x500_BigMac-500.jpg" alt="Cheeseburger">
-  <h3>Cheeseburger</h3>
-  <div class="flex justify-between items-center py-2">
-    <p class="text-mcdo-red font-bold text-lg">₱89.00</p>
-    <button class="add-btn">
-      <i class="fa-solid fa-plus text-xl text-white"></i>
+<body class="bg-white text-charcoal-gray font-poppins lg:overflow-hidden">
+  <!-- Header -->
+  <div class="flex justify-between items-center mr-4">
+    <div class="content-center">
+      <img src="https://th.bing.com/th/id/R.8ebe3e57e3e3f05204d02982b6770931?rik=b2WYsgwEwJKCEg&riu=http%3a%2f%2fpngimg.com%2fuploads%2fmcdonalds%2fmcdonalds_PNG17.png&ehk=a6cfXksYj0D%2f0lQjY7HzJSAaoFORKRNd5UGjH5OK6Bg%3d&risl=&pid=ImgRaw&r=0" class="h-15">
+    </div>
+    <button>
+      <i class="fa-solid fa-bars text-2xl md:hidden"></i>
     </button>
-
   </div>
-  
-</div>
 
-
+  <!-- Categories -->
+  <div class="flex overflow-x-auto mt-2 mb-6 gap-5 p-3 scrollbar-hide md:justify-center xl:justify-center">
+    <button class="category-btn">All</button>
+    <button class="category-btn">Burgers</button>
+    <button class="category-btn">Breakfast</button>
+    <button class="category-btn">Chicken & Platters</button>
+    <button class="category-btn">Fries</button>
+    <button class="category-btn">Drinks & Desserts</button>
+    <button class="category-btn">McCafé</button>
+    <button class="category-btn">Extras</button>
   </div>
+
+  <div class="flex flex-col lg:flex-row container mx-auto p-4 gap-6">
+    <!-- Product List -->
+    <div class="w-full lg:w-2/3">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4"> 
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-13-300x300.webp">
+          <h3>Triple Cheeseburger Meal</h3>
+          <div class="price-container">
+            <p>₱ 288.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-15-300x300.webp">
+          <h3>Cheeseburger Meal</h3>
+          <div class="price-container">
+            <p>₱ 146.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-16-300x300.webp">
+          <h3>Big Mac Meal</h3>
+          <div class="price-container">
+            <p>₱ 282.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-11-300x300.webp">
+          <h3>Quarter Pounder w/ Cheese Meal</h3>
+          <div class="price-container">
+            <p>₱ 282.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-06-300x300.webp">
+          <h3>McChicken Meal</h3>
+          <div class="price-container">
+            <p>₱ 231.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-burgers-price-19-300x300.webp">
+          <h3>Cheesy Burger McDo Meal</h3>
+          <div class="price-container">
+            <p>₱ 165.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-price-02-300x300.webp">
+          <h3>Double Big Mac Meal</h3>
+          <div class="price-container">
+            <p>₱ 342.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/sausage-mcmuffin-with-hashbrowns-meal-300x300-1.webp">
+          <h3>Sausage McMuffin with Hash Browns Meal</h3>
+          <div class="price-container">
+            <p>₱ 150.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/egg-muffin-meal-300x300-1.webp">
+          <h3>Egg Muffin Meal</h3>
+          <div class="price-container">
+            <p>₱ 116.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-with-hashbrown-meal-300x300-1.webp">
+          <h3>Cheesy Eggdesal with Hash Browns Meal</h3>
+          <div class="price-container">
+            <p>₱ 134.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-meal-with-sausage-meal-300x300-1.webp">
+          <h3>Cheesy Eggdesal with Sausage Meal</h3>
+          <div class="price-container">
+            <p>₱ 127.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-meal-with-ham-meal-300x300-1.webp">
+          <h3>Cheesy Eggdesal with Ham Meal</h3>
+          <div class="price-container">
+            <p>₱ 119.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/cheesy-eggdesal-solo-300x300-1.webp">
+          <h3>Cheesy Eggdesal Solo</h3>
+          <div class="price-container">
+            <p>₱ 77.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <!-- Pancake & Platters -->
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/2-pc-hotcakes-solo-300x300-1.webp">
+          <h3>2 pcs Hotcakes Solo – Classic</h3>
+          <div class="price-container">
+            <p>₱ 83.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/2-pc-hotcakes-with-hasbrown-meal-300x300-1.webp">
+          <h3>2 pc Hotcakes with Hash Brown Meal</h3>
+          <div class="price-container">
+            <p>₱ 137.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2024/03/2-pc-hotcakes-with-hashbrown-meal-300x300-1.webp">
+          <h3>2 pc Hotcakes & Sausage with Hash Browns Meal</h3>
+          <div class="price-container">
+            <p>₱ 174.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <!-- Fries -->
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcfries-original.webp">
+          <h3>Fries</h3>
+          <div class="price-container">
+            <p>₱ 92.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-13-300x300.webp">
+          <h3>BFF Fries</h3>
+          <div class="price-container">
+            <p>₱ 175.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-15-300x300.webp">
+          <h3>Shake Shake Fries BBQ</h3>
+          <div class="price-container">
+            <p>₱ 101.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-14-300x300.webp">
+          <h3>Shake Shake Fries Cheese</h3>
+          <div class="price-container">
+            <p>₱ 101.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/twister-fries-regular-300x300.webp">
+          <h3>Twister Fries Regular</h3>
+          <div class="price-container">
+            <p>₱ 99.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <!-- Drinks & Desserts -->
+         <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-14-philippines-coke-300x300.webp">
+          <h3>Coke</h3>
+          <div class="price-container">
+            <p>₱ 77.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-04-philippines-300x300.webp">
+          <h3>Coke McFloat</h3>
+          <div class="price-container">
+            <p>₱ .00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-02-philippines-300x300.webp">
+          <h3>Hot Fudge Sundae</h3>
+          <div class="price-container">
+            <p>₱ 59.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-03-philippines-300x300.webp">
+          <h3>Hot Caramel Sundae</h3>
+          <div class="price-container">
+            <p>₱ 59.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-11-philippines-300x300.webp">
+          <h3>McFlurry with Oreo</h3>
+          <div class="price-container">
+            <p>₱ 70.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/drinks-mcdo-image-10-philippines-300x300.webp">
+          <h3>Matcha McFlurry with Oreo Solo</h3>
+          <div class="price-container">
+            <p>₱ 83.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <!-- McCafe -->
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/10/image-2.png">
+          <h3>McCafé Premium Roast Coffee</h3>
+          <div class="price-container">
+            <p>₱ 63.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/10/image-3.png">
+          <h3>McCafé Iced Coffee Original</h3>
+          <div class="price-container">
+            <p>₱ 63.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <!-- Extras -->
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-08-300x300.webp">
+          <h3>Extra Plain Rice</h3>
+          <div class="price-container">
+            <p>₱ 40.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-01-300x300.webp">
+          <h3>Extra Gravy</h3>
+          <div class="price-container">
+            <p>₱ 11.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+        <div class="item-card">
+          <img src="https://mcdomenuprices.com.ph/wp-content/uploads/2025/08/mcdo-fries-18-300x300.webp">
+          <h3>Extra Crispy Chicken Fillet Ala King Sauce</h3>
+          <div class="price-container">
+            <p>₱ 11.00</p>
+            <button class="add-btn">
+              <i class="fa-solid fa-plus text-xl text-white"></i>
+            </button>
+          </div> 
+        </div>
+
+      </div>
+    </div>
+
+    
+    
+
+    <!-- Orders Panel -->
+    <div class="w-full lg:w-1/3 h-full bg-white shadow-lg rounded-lg 
+    lg:sticky lg:top-4 overflow-hidden transform 
+    lg:transform-none translate-y-full lg:translate-y-0">
+      <div class="flex justify-between items-center bg-golden-yellow p-5">
+        <h1 class="text-2xl font-semibold text-mcdo-red">My Orders</h1>
+      </div>
+
+      <div class="p-5 h-full overflow-y-auto">
+        <!-- Order Items -->
+        <div class="flex justify-between items-center py-4 border-b border-gray-200">
+                <div class="text-left">
+                    <div class="font-semibold text-gray-800">Big Mac Meal</div>
+                    <div class="text-gray-500 text-sm">Medium • Coke</div>
+                </div>
+                <div class="font-semibold text-mcdo-red">$8.99</div>
+            </div>
+
+            <div class="flex justify-between py-5 mt-2 border-t-2 border-dashed border-gray-300 font-bold text-lg">
+                <span>Total:</span>
+                <span>$17.77</span>
+            </div>
+            
+            <div class="absolute bottom-0 left-0 right-0 p-5 bg-white border-t border-gray-200">
+                <button class="w-full bg-mcdo-red text-white rounded-full py-4 px-8 text-lg font-semibold hover:bg-red-700 transition-colors">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+
+    
+<script src="main.js"></script>
 </body>
 </html>
