@@ -15,7 +15,7 @@
 @layer components {
 .category-btn {
   @apply border-2 border-golden-yellow rounded-full px-5 py-2 font-semibold text-sm 
-  hover:bg-mcdo-red hover:text-white hover:border-none
+  hover:bg-golden-yellow hover:text-white hover:border-none
   whitespace-nowrap flex-shrink-0 transition-all duration-200;
 }
 
@@ -28,21 +28,21 @@
 }
 
 .item-card {
-  @apply flex flex-col min-h-[300px] bg-white rounded-xl p-4 shadow-sm border border-golden-yellow 
-         hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] 
+  @apply flex flex-col min-h-[220px] bg-white rounded-lg p-3 shadow-sm border border-golden-yellow 
+         hover:shadow-md hover:-translate-y-0 hover:scale-[1.01] 
          transition-all duration-200 ease-in-out;
 }
 
 .item-card img {
-  @apply w-full h-40 object-cover rounded-lg mb-3;
+  @apply w-full h-28 object-contain rounded-md mb-2;
 }
 
 .item-card h3 {
-  @apply font-semibold text-charcoal-gray text-base text-left mb-auto;
+  @apply font-semibold text-charcoal-gray text-sm text-left mb-auto leading-tight;
 }
 
 .item-card p {
-  @apply text-mcdo-red font-bold text-xl mt-1;
+  @apply text-mcdo-red font-bold text-base mt-1;
 }
 
 .price-container {
@@ -53,7 +53,52 @@
     @apply bg-mcdo-red w-10 h-8 rounded-sm cursor-pointer ;
 }
 
-.order-item {
-  @apply flex justify-between items-center py-4 border-b border-gray-200;
+.order-item-card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-100 p-3 hover:shadow-md transition-all duration-200;
 }
+
+.order-item-card-header {
+    @apply flex justify-between items-start mb-2;
+}
+
+.order-item-card-title {
+    @apply flex-1;
+}
+
+.order-item-card-name {
+    @apply font-semibold text-gray-800 text-base;
+}
+
+.order-item-card-delete {
+  @apply text-gray-400 hover:text-red-500 transition-colors text-sm;
+}
+
+.order-item-card-body {
+  @apply flex justify-between items-center;
+}
+
+.order-item-card-price {
+  @apply text-mcdo-red font-bold;
+}
+
+.order-item-card-quantity {
+  @apply flex items-center space-x-2;
+}
+
+.quantity-btn {
+    @apply rounded-full w-6 h-6 flex items-center justify-center transition-colors text-xs;
+}
+
+.quantity-btn-minus {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-600;
+}
+
+.quantity-btn-plus {
+    @apply bg-mcdo-red hover:bg-red-700 text-white;
+}
+
+.quantity-display {
+    @apply font-semibold text-gray-800 w-4 text-center text-sm;
+}
+    
 }
